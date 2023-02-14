@@ -124,3 +124,16 @@ git clone https://github.com/javacques/shutter-encoder.git
 cd shutter-encoder
 python3 build.py
 ```
+
+Additional parameters:
+- `--name` to set a different name
+- `--app-version` to set a different app version (1.0.0 by default).
+
+Note: App version can't be started with "0" for some reason.
+
+## Generate icons
+
+Install one of the following depending on your OS:
+- libmagickwand-dev for APT on Debian/Ubuntu
+- imagemagick for MacPorts/Homebrew on Mac
+- ImageMagick-devel for Yum on CentOS

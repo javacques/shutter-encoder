@@ -2,3 +2,7 @@
 JRE/
 out/
 out_jar/
+
+.venv/
+
+.DC_Store
