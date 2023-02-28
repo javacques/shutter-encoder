@@ -132,7 +132,7 @@ contents_dir = os.path.join(current_dir, "src", "contents")
 output_icon_filename = os.path.join(output_dir, "icon.ico")
 if not os.path.exists(output_icon_filename):
     if args.icon_file and os.path.exists(args.icon_file):
-        print('icon ' + args.icon_file + ' passed as arg')
+        print('icon file ' + args.icon_file + ' was passed as an argument')
         shutil.copyfile(args.icon_file, output_icon_filename)
     elif shutil.which('magick'):
         print('icon not passed as arg, but imagemagick detected')
