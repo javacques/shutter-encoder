@@ -38,7 +38,7 @@ jobs:
     steps:
       - id: download-windows-installer
         name: Download Windows installer
-          uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: windows-installer
 
