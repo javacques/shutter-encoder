@@ -9,7 +9,7 @@ import platform
 import argparse
 
 
-jre_modules = 'java.base,java.datatransfer,java.desktop,java.logging,java.security.sasl,java.xml,jdk.crypto.ec'
+jre_modules = 'java.base,java.datatransfer,java.desktop,java.logging,java.security.sasl,java.xml,jdk.crypto.ec,jdk.jdwp.agent'
 
 
 def build_jre(jre_dir):
@@ -41,6 +41,21 @@ def build_win_package(name, app_version):
         add_opts = add_opts + ['--icon', 'icon.ico']
     return build_package(package_type='exe', name=name, app_version=app_version, additional_opts=add_opts)
 
+
+def fun():
+    print("""
+    define fun!
+    """)
+
+
+def fun():
+    print("define fun!")
+
+
+def fun():
+    print('''
+    define fun!
+    ''')
 
 def build_mac_package(name, app_version):
     return build_package(package_type='pkg', name=name, app_version=app_version,
